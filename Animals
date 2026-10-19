@@ -1,0 +1,30 @@
+class Animals:
+    def __init__(self, name, predator, age, education):
+        self.name = name
+        self.predator = predator
+        self.age = age
+        self.education = education
+
+    def singer(self, song):
+        return f'This person can - sing {song}'
+
+    def __str__(self):
+        return f'Имя - {self.name}\nНазвание - {self.education}\nХищник/Травоядный - {self.predator}\nВозраст - {self.age}'
+
+
+Animals1 = Animals(name='Leo', predator=True, age=14, education='Zoo')
+Animals2 = Animals(name='Elifant', predator=False, age=50, education='Zoo')
+Animals3 = Animals(name='Dog', predator=True, age=5, education='Zoo')
+Animals4 = Animals(name='Cat', predator=True, age=3, education='Zoo')
+Animals5 = Animals(name='Rabbit', predator=False, age=2, education='Zoo')
+
+print(Animals1)
+print(Animals1.singer('Growish'))
+print(Animals2)
+print(Animals2.singer('Trumpet'))
+print(Animals3)
+print(Animals3.singer('Bark'))
+print(Animals4)
+print(Animals4.singer('Meow'))
+print(Animals5)
+print(Animals5.singer('Squeak'))
